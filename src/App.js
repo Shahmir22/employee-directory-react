@@ -1,5 +1,4 @@
-// import Header from "./components/Header/Header";
-import Main from "src\components\main\main.jsx";
+import Main from "./components/main/main";
 import React from "react";
 
 function App() {
