@@ -1,7 +1,7 @@
 import React from "react";
-import API from "src\src\Utils\API.js";
-import Table from "/src\components\table\Table.jsx";
-import Header from "src\components\header\Header.jsx";
+import API from "../Utils/API";
+import Table from "./Table";
+import Header from "./Header";
 
 class Main extends React.Component {
   state = {
@@ -11,7 +11,7 @@ class Main extends React.Component {
   };
 
   componentDidMount() {
-    API.getEmployees()
+    API.getUsers()
       .then((res) => {
         this.setState({
           employees: res.data.results,
